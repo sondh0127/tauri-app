@@ -1,6 +1,6 @@
 <route lang="yaml">
 meta:
-  label: Home
+  label: JSON-YAML
   icon: 'i-carbon:page-break'
 </route>
 
@@ -8,5 +8,5 @@ meta:
 </script>
 
 <template>
-  Home
+  YAML
 </template>

@@ -1,7 +1,9 @@
 <script lang="ts" setup>
-const a = ref('b')
+import DefaultLayout from '@/layouts/DefaultLayout.vue'
 </script>
 
 <template>
-  <RouterView />
+  <DefaultLayout>
+    <RouterView />
+  </DefaultLayout>
 </template>
