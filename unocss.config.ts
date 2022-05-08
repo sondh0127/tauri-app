@@ -13,7 +13,10 @@ export default defineConfig<{}>({
     presetUno(),
     presetAttributify(),
     presetIcons({
-      scale: 1.2,
+      scale: 1.15,
+      collections: {
+        carbon: () => import('@iconify-json/carbon/icons.json').then(i => i.default),
+      },
     }),
     presetWebFonts({
       fonts: {
