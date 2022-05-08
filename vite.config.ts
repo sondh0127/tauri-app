@@ -1,3 +1,4 @@
+import { URL, fileURLToPath } from 'url'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import VueJsx from '@vitejs/plugin-vue-jsx'
@@ -10,6 +11,11 @@ import Inspector from 'vite-plugin-vue-inspector'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
   plugins: [
     Vue(),
     VueJsx(),
